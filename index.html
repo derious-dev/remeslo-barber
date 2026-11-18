@@ -128,7 +128,8 @@ a { color: inherit; }
 .hero { padding-block: 56px 72px; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 48px; align-items: center; }
 .hero-copy { display: grid; gap: 26px; min-width: 0; }
-.hero h1 { font-size: clamp(38px, 6.6vw, 82px); font-weight: 800; }
+.hero h1 { font-size: clamp(30px, 4.8vw, 58px); font-weight: 800; }
+@media (max-width: 860px) { .hero h1 { font-size: clamp(28px, 8.2vw, 60px); } }
 .hero h1 em { font-style: normal; color: var(--brass); }
 .hero-lead { font-size: clamp(17px, 1.6vw, 19px); color: var(--muted); max-width: 33em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -136,7 +137,7 @@ a { color: inherit; }
 .stat b { display: block; font: 700 28px/1.1 var(--font-display); font-variant-numeric: tabular-nums; }
 .stat span { font-size: 14px; color: var(--muted); }
 
-.hero-visual { display: flex; gap: 22px; align-items: stretch; justify-content: center; min-width: 0; }
+.hero-visual { display: flex; gap: 22px; align-items: center; justify-content: center; min-width: 0; }
 .pole { display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; }
 .pole-cap { width: 64px; height: 26px; background: linear-gradient(180deg, #D9B26A, var(--brass) 60%, #6E4A16); border-radius: 32px 32px 8px 8px; }
 .pole-cap.bottom { border-radius: 8px 8px 32px 32px; }
